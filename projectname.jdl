@@ -1,0 +1,284 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName projectname
+    blueprints []
+    buildTool maven
+    cacheProvider redis
+    clientFramework react
+    clientPackageManager npm
+    clientTheme yeti
+    creationTimestamp 1696425720706
+    databaseType sql
+    devDatabaseType mysql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jwtSecretKey "n08tZZ5v8y5OnX/OX+lLTkIIRDPVpV00ITVmd6LFMxqxx1o40mgySDdOIn5rsQYC3v/kGC6MnP+yyxm/kWy2tNn1NJrbCqcKoNmJRnnVoKt3voBQtx/A98Iqo/O1+Qm2t+x3hmpTbaHExU1VIBqcp8G5AUftXoip5G+SqWjSKA=="
+    languages [en, my]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.projectname
+    prodDatabaseType mysql
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities Employee, OffboardingTermination, WorkforceDiversityAndInclusi, HrBudgetingAndCostTracking, EmployeeSelfServicePortal, BenefitsOpenEnrollment, EmployeeRelations, SuccessionPlanning, EmployeeSurveysAndFeedback, RecruitmentAndOnboarding, ComplianceAndDocuments, HrAnalyticsAndReporting, AttendanceAndLeaveManagement, TrainingAndDevelopment, BenefitsAdministration, Payroll, TimeTracking, PerformanceReview, Applicant, JobPosting
+}
+
+entity Employee {
+  first String
+  name String
+  last String
+  name_1 String
+  employee String
+  dateOfBirth String
+  gender String
+  phone String
+  email String
+  address String
+  employment String
+  status String
+  hire String
+  date String
+  termination String
+  date_1 String
+  job String
+  title String
+  department String
+  managerSupervisor String
+  salary String
+  information String
+  benefits String
+  information_1 String
+  emergency String
+  contact String
+  details String
+  work String
+  location String
+  work_1 String
+  schedule String
+}
+entity OffboardingTermination {
+  exit String
+  interviews String
+  termination String
+  checklist String
+}
+entity WorkforceDiversityAndInclusi {
+  diversity String
+  metrics String
+  inclusion String
+  initiatives String
+}
+entity HrBudgetingAndCostTracking {
+  hr__ String
+  expenses String
+  budget String
+  allocation String
+}
+entity EmployeeSelfServicePortal {
+  employee String
+  profile String
+  updates String
+  benefits String
+  enrollment String
+  payroll String
+  information String
+  access String
+}
+entity BenefitsOpenEnrollment {
+  open String
+  enrollment String
+  periods String
+  benefit String
+  plan String
+  selections String
+}
+entity EmployeeRelations {
+  employee String
+  complaintsIncident String
+  reports String
+  investigations String
+  resolutions String
+}
+entity SuccessionPlanning {
+  potential String
+  successors String
+  leadership String
+  development String
+}
+entity EmployeeSurveysAndFeedback {
+  employee String
+  surveys String
+  feedback String
+  forms String
+  survey String
+  results String
+}
+entity RecruitmentAndOnboarding {
+  job String
+  requisitions String
+  interview String
+  feedback String
+  onboarding String
+  checklists String
+  background String
+  checks String
+  offer String
+  letters String
+}
+entity ComplianceAndDocuments {
+  employee String
+  contracts String
+  hr__ String
+  policies String
+  and String
+  procedures String
+  compliance String
+  documentation String
+  employee_1 String
+  handbooks String
+}
+entity HrAnalyticsAndReporting {
+  various String
+  hr__ String
+  metrics String
+  custom String
+  reports String
+  data String
+  visualization String
+}
+entity AttendanceAndLeaveManagement {
+  attendance String
+  records String
+  leave String
+  requests String
+  leave_1 String
+  balances String
+  leave_2 String
+  approvals String
+}
+entity TrainingAndDevelopment {
+  training String
+  courses String
+  training_1 String
+  attendance String
+  certification String
+  tracking String
+  development String
+  plans String
+  training_2 String
+  costs String
+}
+entity BenefitsAdministration {
+  health String
+  insurance String
+  retirement String
+  plans String
+  dental String
+  and String
+  vision String
+  plans_1 String
+  flexible String
+  spending String
+  accounts String
+  Fsas String
+  life String
+  insurance_1 String
+  disability String
+  insurance_2 String
+  benefits String
+  enrollmentChanges String
+}
+entity Payroll {
+  salary String
+  tax String
+  information String
+  deductions String
+  direct String
+  deposit String
+  details String
+  pay String
+  stubs String
+  benefits String
+  enrollment String
+}
+entity TimeTracking {
+  time String
+  inOut String
+  overtime String
+  time_1 String
+  off String
+  requests String
+  paid String
+  time_2 String
+  off_1 String
+  Pto String
+  balance String
+  timesheets String
+  approvals String
+}
+entity PerformanceReview {
+  employee String
+  being String
+  reviewed String
+  reviewer String
+  review String
+  date String
+  performance String
+  goals String
+  ratingsFeedback String
+  development String
+  plan String
+}
+entity Applicant {
+  first String
+  name String
+  last String
+  name_1 String
+  contact String
+  information String
+  resumeCv String
+  cover String
+  letter String
+  application String
+  date String
+  application_1 String
+}
+entity JobPosting {
+  job String
+  title String
+  job_1 String
+  description String
+  department String
+  location String
+  salary String
+  range String
+  required String
+  qualifications String
+  application String
+  deadline String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
